@@ -6,18 +6,17 @@ DEFAULT_BACKEND_URL = "https://fictional-giggle-4gvg7q977q73j4r-8000.app.github.
 
 st.set_page_config(
     page_title="California Housing Price Predictor",
-    page_icon="🏡",
     layout="centered",
 )
 
 with st.sidebar:
-    st.header("⚙️ Configuration")
+    st.header("Configuration")
     backend_url = st.text_input("URL du backend (FastAPI)", value=DEFAULT_BACKEND_URL)
     st.caption("URL de l'API déployée sur GitHub Codespaces (ex: https://xxxx-8000.app.github.dev).")
     st.divider()
     st.caption("Housing-Price-Frontend · Streamlit UI pour l'API California Housing.")
 
-st.title("🏡 California Housing Price Predictor")
+st.title("California Housing Price Predictor")
 st.caption("Estimez la valeur médiane d'un logement à partir de ses caractéristiques.")
 
 st.subheader("Revenu & logement")
@@ -40,7 +39,7 @@ with col4:
 
 st.map(pd.DataFrame({"lat": [latitude], "lon": [longitude]}), zoom=8, size=200)
 
-predict_clicked = st.button("🔮 Predict", type="primary", use_container_width=True)
+predict_clicked = st.button("Predict", type="primary", use_container_width=True)
 
 if predict_clicked:
     payload = {
