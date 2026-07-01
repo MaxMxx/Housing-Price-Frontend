@@ -2,7 +2,7 @@
 
 Frontend Streamlit pour l'API de prédiction du prix des logements (California Housing).
 
-Communique avec le backend FastAPI (repo [Housing-Price](../Housing-Price)) déployé sur GitHub Codespaces.
+Communique avec le backend FastAPI Housing-Price déployé sur GitHub Codespaces.
 
 ## Lancer en local
 
